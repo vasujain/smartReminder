@@ -54,7 +54,7 @@ include 'header.php';
 							// Remember to copy files from the SDK's src/ directory to a
 							// directory in your application on the server, such as php-sdk/
 							require_once('../php-sdk/facebook.php');
-							ini_set('display_errors', 1);
+							error_reporting(0);
 							$config = array(
 								'appId' => '1456937381189643',
 								'secret' => '34ccdd889dfa456c2a8e1856fd3eab55',
@@ -63,17 +63,18 @@ include 'header.php';
 							$facebook = new Facebook($config);
 							$user_id = $facebook->getUser();
 							$access_token = $facebook->getAccessToken();
-							$access_token = "CAAUtE6sQ2AsBANpiSnCyKZBDkZBDZAsCYQ5MZBNzyjHzYRiNTl4gLdxGxLaeZCuXhatjclGrjje4SD8oQroCb73RpGE2O5ABLEo8bleTzgWcUrL4yYICbyFbbKMMOVAqjYnPNCzvJWaMcLBJCp56e79DY5dG0Xh3SfeZC7cQnOSL6cu2EwJSYJQEjZACoEQ6ZCzlmDZB0oEQaegZDZD";
+							$access_token = "CAAUtE6sQ2AsBAKj3qD13XPDlmcVTz0KsxmvsD8J5y8Qt0BGSkt6MTkH4XT1gwoC684g8CTMj1aqxerdL7S9rYfMkQUHjCtWQhMjYTSjT5yBlzLZBgHKtKj91b9s8i44CZBwzHDSCzRHsE2N1APzlZBvGZB5L9ZCjlPLBa2Dzy0BIz8K4mvQltxA4ZC34QhpIfmkaUBZCTMIyQZDZD";
 							?>
 
 							<?php
+							session_start();
 							if($user_id) {
 
 								// We have a user ID, so probably a logged in user.
 								// If not, we'll get an exception, which we handle below.
 								try {
 //									$fql = 'SELECT name from user where uid = ' . $user_id;
-									$fql = 'SELECT name, birthday, birthday_date, current_location, sex, username, uid
+									$fql = 'SELECT name, birthday, pic_big, birthday_date, current_location, sex, username, uid, hometown_location.city
 											FROM user
 											WHERE uid in (SELECT uid2 FROM friend WHERE uid1 = me())';
 									$ret_obj = $facebook->api(array(
@@ -82,25 +83,41 @@ include 'header.php';
 										'access_token' => $access_token,
 									));
 
+									$object =  array();
+
 									$res .= "<table class='table-fb'>";
-									for ($i=0;$i<200;$i++){
-										$res .= "<tr>";
-										$res .= "<td>" . $ret_obj[$i]['name'] . "</td>";
-										$res .= "<td>" . $ret_obj[$i]['birthday_date'] . "</td>";
-										$res .= "<td>" . $ret_obj[$i]['current_location']['city'] . ", " . $ret_obj[$i]['current_location']['state'] . "</td>";
-										$res .= "<td>" . $ret_obj[$i]['sex'] . "</td>";
-										$res .= "<td>" . $ret_obj[$i]['uid'] . "</td>";
-										$res .= "</tr>";
+									for ($i=0;$i<100;$i++){
+										//Check if birthday/location is not null
+										if($ret_obj[$i]['birthday_date'] && $ret_obj[$i]['current_location']['city']){
+											//get all likes for the user
+											$fqlLikes = "SELECT name, type FROM page WHERE page_id IN (SELECT page_id FROM page_fan WHERE uid=".$ret_obj[$i]['uid'].") AND type != 'APPLICATION'";
+											$ret_obj_likes = $facebook->api(array(
+												'method' => 'fql.query',
+												'query' => $fqlLikes,
+												'access_token' => $access_token,
+											));
+
+											$object[$i]->fbid = $ret_obj[$i]['uid'];
+											$object[$i]->name = $ret_obj[$i]['name'];
+											$object[$i]->birthday= $ret_obj[$i]['birthday_date'];
+											$object[$i]->gender = $ret_obj[$i]['sex'];
+											$object[$i]->currentCity = $ret_obj[$i]['current_location']['city'];
+											$object[$i]->homeCity = $ret_obj[$i]['hometown_location.city'];
+											$object[$i]->pic = $ret_obj[$i]['pic_big'];
+											$object[$i]->likes = $ret_obj_likes;
+											$_SESSION['p13n_' . $i] = $object[$i];
+
+											$res .= "<tr>";
+											$res .= "<td><a href='personalize.php?p13nid=$i'>" . $ret_obj[$i]['name'] . "</a></td>";
+											$res .= "<td>" . $ret_obj[$i]['birthday_date'] . "</td>";
+											$res .= "<td>" . $ret_obj[$i]['current_location']['city'] . ", " . $ret_obj[$i]['current_location']['state'] . "</td>";
+											$res .= "<td>" . $ret_obj[$i]['sex'] . "</td>";
+											$res .= "<td>" . $ret_obj[$i]['uid'] . "</td>";
+											$res .= "</tr>";
+										}
 									}
 									$res .= "</table>";
-
 									echo $res;
-
-
-									// Store data in web apis/sqllite
-
-
-
 								} catch(FacebookApiException $e) {
 									// If the user is logged out, you can have a
 									// user ID even though the access token is invalid.

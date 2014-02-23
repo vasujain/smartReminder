@@ -23,22 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
+      <file leaf-file-name="fbconnect.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/fbconnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="29" selection-start="73" selection-end="73" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="5280">
+            <state line="99" column="61" selection-start="4140" selection-end="4144" vertical-scroll-proportion="-14.25" vertical-offset="1143" max-vertical-offset="2430">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <marker date="1393138583000" expanded="true" signature="4672:4707" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fbconnect.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/fbconnect.php">
+      <file leaf-file-name="personalize.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/personalize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="69" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.5215311" vertical-offset="1158" max-vertical-offset="2175">
+            <state line="81" column="0" selection-start="3529" selection-end="3529" vertical-scroll-proportion="0.7097289" vertical-offset="770" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
@@ -63,6 +62,7 @@
         <option value="$PROJECT_DIR$/web/header.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/fbconnect.php" />
+        <option value="$PROJECT_DIR$/web/personalize.php" />
       </list>
     </option>
   </component>
@@ -118,6 +118,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -127,7 +141,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.sourceCode" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../brkim" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prizeshopn" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -225,7 +239,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="812" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -239,7 +253,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17577548" sideWeight="0.6700288" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17577548" sideWeight="0.6700288" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -282,16 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="73" selection-end="73" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="5280">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="44" selection-start="388" selection-end="388" vertical-scroll-proportion="0.3984375" vertical-offset="0" max-vertical-offset="640">
@@ -312,14 +316,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="95" selection-start="214" selection-end="214" vertical-scroll-proportion="0.28125" vertical-offset="0" max-vertical-offset="640">
           <folding>
-            <element signature="e#6#90#0" expanded="true" />
+            <element signature="e#6#90#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/apc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="9" selection-start="4485" selection-end="4485" vertical-scroll-proportion="0.3460925" vertical-offset="1793" max-vertical-offset="6000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="9" selection-start="5686" selection-end="5686" vertical-scroll-proportion="0.3453125" vertical-offset="2239" max-vertical-offset="5775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="73" selection-end="73" vertical-scroll-proportion="0.09569378" vertical-offset="0" max-vertical-offset="5280">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/fbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="69" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.5215311" vertical-offset="1158" max-vertical-offset="2175">
+        <state line="99" column="61" selection-start="4140" selection-end="4144" vertical-scroll-proportion="-14.25" vertical-offset="1143" max-vertical-offset="2430">
+          <folding>
+            <marker date="1393138583000" expanded="true" signature="4672:4707" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/personalize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="3529" selection-end="3529" vertical-scroll-proportion="0.7097289" vertical-offset="770" max-vertical-offset="1935">
           <folding />
         </state>
       </provider>
