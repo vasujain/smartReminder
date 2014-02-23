@@ -9,6 +9,8 @@
 ?>
 
 
-<div class="copy-right">
-	<p>© 2014 Designed at <a href="http://windowsvj.com/" target="_blank">Launch Hack 2014</a> </p>
+<div class="wrap">
+	<div class="copy-right">
+		<p>© 2014 Designed at <a href="http://windowsvj.com/" target="_blank">Launch Hack 2014</a> </p>
+	</div>
 </div>
