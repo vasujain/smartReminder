@@ -6,21 +6,125 @@ include 'header.php';
 	body {
 		background: none !important;
 	}
+
+	.well, .navbar-inner, .thumbnail, #featuredProduct .carousel-control {
+		border: 1px solid rgb(243, 232, 232);
+		background-color: rgb(255, 255, 255);
+		-webkit-box-shadow: inset 0 1px 20px rgba(218, 155, 149, 0.65);
+		-moz-box-shadow: inset 0 1px 20px rgba(218, 155, 149, 0.65);
+		box-shadow: inset 0 1px 20px rgba(218, 155, 149, 0.65);
+	}
+	.well-small {
+		padding: 9px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+	.well {
+		min-height: 20px;
+		padding: 19px;
+		margin-bottom: 20px;
+		background-color: #f5f5f5;
+		border: 1px solid #e3e3e3;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+	}
+	.displayImg img {
+		/*min-width: 100%;*/
+		sborder-bottom: 2px solid rgb(255, 242, 242);
+	}
+	img {
+		width: auto\9;
+		height: auto;
+		/*max-width: 100%;*/
+		vertical-align: middle;
+		border: 0;
+		-ms-interpolation-mode: bicubic;
+	}
+
+	h5 {
+		font-size: 14px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 10px 0;
+		font-family: inherit;
+		font-weight: bold;
+		line-height: 20px;
+		color: inherit;
+		text-rendering: optimizelegibility;
+	}
+	h5 {
+		display: block;
+		font-size: 0.83em;
+		-webkit-margin-before: 1.67em;
+		-webkit-margin-after: 1.67em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		font-weight: bold;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 4px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 20px;
+		color: #333;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #f5f5f5;
+		background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+		background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+		background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+		background-repeat: repeat-x;
+		border: 1px solid #ccc;
+		border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+		border-bottom-color: #b3b3b3;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	}
+
+	.newTag, .saleTag {
+		position: absolute;
+		z-index: 11;
+		width: 91px;
+		height: 91px;
+		background-image: url(../images/tag.png);
+		background-repeat: no-repeat;
+		top: -4px;
+		left: -4px;
+	}
+	.span3 {
+		width: 300px;
+		height: 300px;
+	}
 </style>
 <div class="main">
 	<div class="wrap">
-		<h1>Smart Shopper</h1>
 		<div class="header">
 			  <div class="header_top">
 					  <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-							<ul class="nav">
-								<li><a href="#"><i><img src="images/settings.png" alt="" /></i>Settings</a></li>
-								<li class="active"><a href="#"><i><img src="images/user.png" alt="" /></i>Account</a></li>
-								<li><a href="#"><i><img src="images/mail.png" alt="" /></i>Messages <span class="messages">5</span></a></li>
-								<li><a href="#"><i><img src="images/favourite.png" alt="" /></i>Favorites</a></li>
-							<div class="clear"></div>
-						    </ul>
+							  <ul class="nav">
+								  <li><a href="index.php"><i><img src="images/settings.png" alt="" /></i>Smart Shopper (Powered by Macy's, Bitpay)</a></li>
+								  <li><a href="fbconnect.php"><i><img src="images/favourite.png" alt="" /></i>Facebook Connect</a></li>
+								  <div class="clear"></div>
+							  </ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
 				        </div>	
 					  <div class="profile_details">
@@ -105,7 +209,6 @@ include 'header.php';
 									}
 								}
 							} else {
-								echo "<div align='center'><img src='" .  $_SESSION['p13n_' . $p13nid]->pic . "'></div><br/>";
 								echo "User Interests can not be loaded.<br/>";
 								echo "Recommending most common products.<br/><br/>";
 								array_push($interestList,$commonProducts);
@@ -126,12 +229,36 @@ include 'header.php';
 								curl_setopt($ch, CURLOPT_URL, $httpGetCallUrl);
 								curl_setopt($ch,CURLOPT_HTTPHEADER,array('Accept: application/json','x-macys-webservice-client-id: hackathon'));
 								$result = curl_exec($ch);
+
+								//print_r($result);
+
+
 								$json = json_decode($result, true);
+
 								$numberOfItems = $json['limit'];
 								for($i=0; $i<3; $i++) {
-									print_r($json['searchresultgroups']['0']['products']);
+
+
+									//print_r($json['searchresultgroups']['0']['products']['product'][$i]['imageurl']);
 
 //									?>
+									<span class="span3">
+										<div class="well well-small">
+											<a class="displayImg" href="#"><img src="<?php echo $json['searchresultgroups']['0']['products']['product'][$i]['image']['0']['imageurl']; ?> " alt="#"></a>
+											<h5><?php echo $json['searchresultgroups']['0']['products']['product'][$i]['summary']['producttype']; echo ": " . $json['searchresultgroups']['0']['products']['product'][$i]['summary']['name']; ?></h5>
+											<p>
+												<a class="btn" href="<?php echo $json['searchresultgroups']['0']['products']['product'][$i]['summary']['producturl'];?>">view details</a>
+											</p>
+											<p>
+												<a href="">
+													<img src="http://minion-inc.com/images/logos/bitcoin-accepted.png" width="140px">
+												</a>
+											</p>
+											<p><span class="price"><small>$</small><?php echo $json['searchresultgroups']['0']['products']['product'][$i]['price']['regular']['value'];?></span></p>
+										</div>
+									</span>
+
+
 <!--									<a href= "--><?php //echo($json['searchresultgroups']['0']['products']['product'][$i]['image']['0']['imageurl']); ?><!-- ">-->
 <!--										<img src="--><?php //echo($json['searchresultgroups']['0']['products']['product'][$i]['image']['0']['imageurl']); ?><!-- ">-->
 <!--									</a>-->
@@ -145,6 +272,7 @@ include 'header.php';
 				</div>
 			</div>
     	<div class="clear"></div>
+
  	 </div>
 <?php
 	include 'footer.php';

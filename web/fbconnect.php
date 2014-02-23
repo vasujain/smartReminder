@@ -1,6 +1,76 @@
 <?php
 include 'header.php';
 ?>
+<head>
+	<style>
+		a {
+			color: #c75f3e;
+		}
+
+		#mytable {
+			width: 700px;
+			padding: 0;
+			margin: 0;
+		}
+
+		caption {
+			padding: 0 0 5px 0;
+			width: 700px;
+			font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+			text-align: right;
+		}
+
+		th {
+			font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+			color: #4f6b72;
+			border-right: 1px solid #C1DAD7;
+			border-bottom: 1px solid #C1DAD7;
+			border-top: 1px solid #C1DAD7;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-align: left;
+			padding: 6px 6px 6px 12px;
+			background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+		}
+
+		th.nobg {
+			border-top: 0;
+			border-left: 0;
+			border-right: 1px solid #C1DAD7;
+			background: none;
+		}
+
+		td {
+			border-right: 1px solid #C1DAD7;
+			border-bottom: 1px solid #C1DAD7;
+			background: #fff;
+			padding: 6px 6px 6px 12px;
+			color: #4f6b72;
+			vertical-align: middle;
+		}
+
+
+		td.alt {
+			background: #F5FAFA;
+			color: #797268;
+		}
+
+		th.spec {
+			border-left: 1px solid #C1DAD7;
+			border-top: 0;
+			background: #fff url(images/bullet1.gif) no-repeat;
+			font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+		}
+
+		th.specalt {
+			border-left: 1px solid #C1DAD7;
+			border-top: 0;
+			background: #f5fafa url(images/bullet2.gif) no-repeat;
+			font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+			color: #797268;
+		}
+	</style>
+</head>
 <body>
 <div class="main">
 	  <div class="wrap">
@@ -9,43 +79,17 @@ include 'header.php';
 				  <div class="menu">
 					  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 					  <ul class="nav">
-						  <li><a href="#"><i><img src="images/settings.png" alt="" /></i>Settings</a></li>
-						  <li class="active"><a href="#"><i><img src="images/user.png" alt="" /></i>Account</a></li>
-						  <li><a href="#"><i><img src="images/mail.png" alt="" /></i>Messages <span class="messages">5</span></a></li>
-						  <li><a href="#"><i><img src="images/favourite.png" alt="" /></i>Favorites</a></li>
+						  <li><a href="index.php"><i><img src="images/settings.png" alt="" /></i>Smart Shopper (Powered by Macy's, Bitpay)</a></li>
+						  <li><a href="fbconnect.php"><i><img src="images/favourite.png" alt="" /></i>Facebook Connect</a></li>
 						  <div class="clear"></div>
 					  </ul>
 					  <script type="text/javascript" src="js/responsive-nav.js"></script>
-				  </div>
-				  <div class="profile_details">
-					  <div id="loginContainer">
-						  <a id="loginButton" class=""><span>Me</span></a>
-						  <div id="loginBox">
-							  <form id="loginForm">
-								  <fieldset id="body">
-									  <div class="user-info">
-										  <h4>Hello,<a href="#"> Username</a></h4>
-										  <ul>
-											  <li class="profile active"><a href="#">Profile </a></li>
-											  <li class="logout"><a href="#"> Logout</a></li>
-											  <div class="clear"></div>
-										  </ul>
-									  </div>
-								  </fieldset>
-							  </form>
-						  </div>
-					  </div>
-					  <div class="profile_img">
-						  <a href="#"><img src="images/profile_img40x40.jpg" alt="" />	</a>
-					  </div>
-					  <div class="clear"></div>
 				  </div>
 				  <div class="clear"></div>
 			  </div>
 		  </div>
 	  </div>
 	  <div class="wrap">
-		<div class="column_left"></div>
 		<div class="column_middle">
 			<div class="social_networks">
 				<ul>
@@ -63,7 +107,7 @@ include 'header.php';
 						$facebook = new Facebook($config);
 						$user_id = $facebook->getUser();
 						$access_token = $facebook->getAccessToken();
-						$access_token = "CAAUtE6sQ2AsBABBlSpfZBB6KsUJkq0tL6tZCtIJA7ZA2vgSCfTKbG0cPAIyPwZBCMQzA9dOun4K6KU1Qz9fcCqxr722esC2pyQSbToWZCNrZBcrcX2zkxtXjQH7thMLODzIGdBndBPPP5WmZBZCy9E49xQnPQmP9JIuNKnQef9SPymIA1SxlIVZCUMJ8rRk2Bmwnsu1Q5LF33HQZDZD";
+						$access_token = "CAAUtE6sQ2AsBAKHiXegpC4oUSX68pBZBBKDkZAZCB4fbO5MJsdthhzofbpTd1ELIGDs6WRqe8YS1twRzVLk9dPdqgZABCx4JRZBq78GDRn1XnjhPxPDPDith7ldZBTUwMT4gmszcO2BGT3obCtHOZAZBx8PttVZCZC6FOS6jiGRs0JagE9bpN6ZAcMpf17l1URmfPOtSHW0NQw0RwZDZD";
 						?>
 
 						<?php
@@ -85,7 +129,7 @@ include 'header.php';
 
 								$object =  array();
 
-								$res .= "<table class='table-fb'>";
+								$res .= "<table class='table-fb' id='mytable'>";
 								for ($i=0;$i<100;$i++){
 									//Check if birthday/location is not null
 									if($ret_obj[$i]['birthday_date'] && $ret_obj[$i]['current_location']['city']){
@@ -97,9 +141,13 @@ include 'header.php';
 											'access_token' => $access_token,
 										));
 
+
+
 										$object[$i]->fbid = $ret_obj[$i]['uid'];
 										$object[$i]->name = $ret_obj[$i]['name'];
 										$object[$i]->birthday= $ret_obj[$i]['birthday_date'];
+										//$object[$i]->age;
+										//$object[$i]->$nextBirthdayInDays;
 										$object[$i]->gender = $ret_obj[$i]['sex'];
 										$object[$i]->currentCity = $ret_obj[$i]['current_location']['city'];
 										$object[$i]->homeCity = $ret_obj[$i]['hometown_location.city'];
@@ -107,12 +155,34 @@ include 'header.php';
 										$object[$i]->likes = $ret_obj_likes;
 										$_SESSION['p13n_' . $i] = $object[$i];
 
+
+
+										//explode the date to get month, day and year
+										$birthDate = explode("/", $object[$i]->birthday);
+										//get age from date or birthdate
+										if($birthDate[2]){
+											$age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
+												? ((date("Y") - $birthDate[2]) - 1)
+												: (date("Y") - $birthDate[2]));
+											$object[$i]->age = $age;
+										}
+										$phpDate = strtotime($birthDate[0]. "/" . $birthDate[1]. "/" . date("Y"));//Converted to a PHP date (a second count)
+										$diff=time()-$phpDate;//time returns current time in seconds
+										$nextBirthdayInDays=abs(floor($diff/(60*60*24)));
+										$object[$i]->nextBirthdayInDays = $nextBirthdayInDays;
+
+
+
 										$res .= "<tr>";
+										$res .= "<td><img src=" . $object[$i]->pic . "></td>";
 										$res .= "<td><a href='personalize.php?p13nid=$i'>" . $ret_obj[$i]['name'] . "</a></td>";
 										$res .= "<td>" . $ret_obj[$i]['birthday_date'] . "</td>";
+										$res .= "<td>" . $object[$i]->age . "</td>";
+										$res .= "<td>" . $object[$i]->$nextBirthdayInDays . "</td>";
 										$res .= "<td>" . $ret_obj[$i]['current_location']['city'] . ", " . $ret_obj[$i]['current_location']['state'] . "</td>";
 										$res .= "<td>" . $ret_obj[$i]['sex'] . "</td>";
 										$res .= "<td>" . $ret_obj[$i]['uid'] . "</td>";
+										$res .= "<td><a href='personalize.php?p13nid=$i'>Shop for them</a></td>";
 										$res .= "</tr>";
 									}
 								}
@@ -144,7 +214,6 @@ include 'header.php';
 				</ul>
 			</div>
 		</div>
-		<div class="column_right"></div>
 	<div class="clear"></div>
  </div>
 </div>
