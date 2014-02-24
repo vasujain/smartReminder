@@ -107,7 +107,7 @@ include 'header.php';
 						$facebook = new Facebook($config);
 						$user_id = $facebook->getUser();
 						$access_token = $facebook->getAccessToken();
-						$access_token = "CAAUtE6sQ2AsBAKHiXegpC4oUSX68pBZBBKDkZAZCB4fbO5MJsdthhzofbpTd1ELIGDs6WRqe8YS1twRzVLk9dPdqgZABCx4JRZBq78GDRn1XnjhPxPDPDith7ldZBTUwMT4gmszcO2BGT3obCtHOZAZBx8PttVZCZC6FOS6jiGRs0JagE9bpN6ZAcMpf17l1URmfPOtSHW0NQw0RwZDZD";
+						$access_token = "CAAUtE6sQ2AsBAEETWTP7vfrpNmY3EhpHhUboHakbVnjPKPjcIlljSI0n0B7euPIZAxqdD4ZCZBxEN1ZBV1XtZAlcucgjZBdpbfjjN5fYaRVM7AZBeMvZCPac4nJegqvvwVtSkeam7ZAGNoleDoKZAZANuqi95aUX47gZA1cUSHsThf25sO2DlQb21H5lvMKF4YMsgd1wCxUU7xZBKRAZDZD";
 						?>
 
 						<?php

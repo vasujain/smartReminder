@@ -26,7 +26,7 @@
       <file leaf-file-name="fbconnect.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/fbconnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="35" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.75" vertical-offset="390" max-vertical-offset="3450">
+            <state line="109" column="257" selection-start="2959" selection-end="2959" vertical-scroll-proportion="-14.375" vertical-offset="1290" max-vertical-offset="3450">
               <folding />
             </state>
           </provider>
@@ -47,7 +47,16 @@
       <file leaf-file-name="personalize.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/personalize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="48" selection-start="9919" selection-end="9919" vertical-scroll-proportion="0.50643086" vertical-offset="3495" max-vertical-offset="7500">
+            <state line="179" column="20" selection-start="5800" selection-end="5800" vertical-scroll-proportion="0.8553055" vertical-offset="2153" max-vertical-offset="7500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startScreen.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bitpay/startScreen.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="37" selection-start="4538" selection-end="4538" vertical-scroll-proportion="-14.041667" vertical-offset="998" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -71,8 +80,8 @@
         <option value="$PROJECT_DIR$/web/footer.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/index.php" />
-        <option value="$PROJECT_DIR$/web/fbconnect.php" />
         <option value="$PROJECT_DIR$/web/personalize.php" />
+        <option value="$PROJECT_DIR$/web/fbconnect.php" />
       </list>
     </option>
   </component>
@@ -139,6 +148,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartReminder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,11 +361,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/images/views.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/user.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -363,16 +433,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/bitpay/startScreen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="37" selection-start="4538" selection-end="4538" vertical-scroll-proportion="-14.041667" vertical-offset="998" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/fbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="35" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.75" vertical-offset="390" max-vertical-offset="3450">
+        <state line="109" column="257" selection-start="2959" selection-end="2959" vertical-scroll-proportion="-14.375" vertical-offset="1290" max-vertical-offset="3450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/personalize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="48" selection-start="9919" selection-end="9919" vertical-scroll-proportion="0.50643086" vertical-offset="3495" max-vertical-offset="7500">
+        <state line="179" column="20" selection-start="5800" selection-end="5800" vertical-scroll-proportion="0.8553055" vertical-offset="2153" max-vertical-offset="7500">
           <folding />
         </state>
       </provider>
